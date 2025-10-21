@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+:root {
+    --cor-h1: #042a2a;
+    --cor-h2: #2c5151;
+    --cor-paragrafo: #ffffff;
+    --cor-botao: #04dbdb;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family:  sans-serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+
+    width: 100vw;
+    height: 100vh;
+}

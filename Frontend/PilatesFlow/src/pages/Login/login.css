@@ -1,0 +1,232 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(235, 235, 235);
+}
+
+h1 {
+    color: var(--cor-h1);
+    font-weight: 800;
+    font-variant: small-caps;
+    font-size: 40px;
+}
+
+h2 {
+    color: var(--cor-h2);
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.HeaderLogin {
+    width: 60%;
+    height: 80%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 25px;
+    box-shadow: 5px 5px 35px rgba(0, 0, 0, 0.207);
+    border: 1px solid gray;
+    backdrop-filter: blur(10px);
+
+    display: grid;
+    grid-template-columns: 2fr 3.4fr;
+}
+
+.colunaUm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 25px 0px 0px 25px;
+    padding: 20px;
+    background-color: rgb(4, 219, 219);
+
+    color: white;
+}
+
+.colunaUm p {
+    color: var(--cor-h1);
+    font-size: 16px;
+
+    position: relative;
+    top: 2%;
+    left: 30%;
+}
+
+.colunaUm button {
+    width: 150px;
+    height: 40px;
+
+    border: 1px solid gray;
+    border-radius: 25px;
+    background-color: transparent;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+.colunaUm button:hover {
+    background-color: rgba(255, 255, 255, 0.51);
+    color: gray;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.colunaDois {
+    border-radius: 0px 25px 25px 0px;
+    padding: 10px;
+    background-color: rgb(235, 235, 235);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.HeaderCadastro {
+    width: 60%;
+    height: 80%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 25px;
+    box-shadow: 5px 5px 35px rgba(0, 0, 0, 0.207);
+    border: 1px solid gray;
+    backdrop-filter: blur(10px);
+
+    display: grid;
+    grid-template-columns: 3.4fr 2fr;
+}
+
+.colunaUmCadastro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0px 25px 25px 0px;
+    padding: 20px;
+    background-color: rgb(4, 219, 219);
+
+    color: white;
+}
+
+.colunaUmCadastro button {
+    width: 150px;
+    height: 40px;
+
+    border: 1px solid gray;
+    border-radius: 25px;
+    background-color: transparent;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+.colunaUmCadastro button:hover {
+    background-color: rgba(255, 255, 255, 0.51);
+    color: gray;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.colunaDoisCadastro {
+    border-radius: 25px 0px 0px 25px;
+    padding: 10px;
+    background-color: rgb(235, 235, 235);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid gray;
+    border-radius: 0px 25px 25px 0px;
+
+    width: 60%;
+    height: 80%;
+}
+
+.formColunaDois {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid gray;
+    border-radius: 25px 0px 0px 25px;
+
+    width: 60%;
+    height: 80%;
+}
+
+label {
+    align-self: flex-start;
+    margin-left: 10%;
+    margin-top: 15px;
+
+    font-weight: bold;
+    font-size: 17px;
+
+    color: var(--cor-h2);
+}
+
+input[type="email"], input[type="password"], input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid var(--cor-h2);
+    background-color: transparent;
+}
+input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focus {
+    outline: none;
+    border-bottom: 2px solid var(--cor-botao);
+    background-image: linear-gradient(to top, rgb(209, 209, 209), rgb(235, 235, 235));
+    transition: 0.5s;
+}
+
+button[type="button"] {
+    width: 50%;
+    height: 40px;
+    margin-top: 30px;
+
+    border: none;
+    border-radius: 25px;
+    background-color: var(--cor-botao);
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+button[type="submit"]:hover {
+    background-color: rgba(50, 51, 51, 0.566);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.verSenhaContainer {
+    position: absolute;
+    left: 82%;
+    top: 55%;
+}
+
+.verSenhaContainerDois {
+    position: absolute;
+    left: 45%;
+    top: 55%;
+}
